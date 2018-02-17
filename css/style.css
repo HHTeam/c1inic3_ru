@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase|Gidugu');
+
+html, body {
+  background-color: black;
+  background: url('../images/background.jpg');
+}
+
+.pole {
+  position: fixed;
+  padding-top: 15%; padding-left: 40%;
+  padding-right: 40%;
+  text-align: center;
+  font-family: 'Cormorant Unicase';
+  color: green;
+  font-size: 25px;
+}
+
+.menu {
+  position: fixed;
+  padding-top: 15%;  
+  padding-right: 40%;
+  padding-left: 40%;
+  text-align: center;
+  font-family: 'Cormorant Unicase';
+  color: green;
+  font-size: 25px;
+}
+
+p {
+  color: silver;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: green;
+}
+ a:hover {
+   color: red;
+   text-decoration: underline;
+} 
+
+.heading {
+  font-family: 'Gidugu';
+  font-size: 50px;
+  color: white;
+}
+
+.subheading {
+  font-family: 'Gidugu';
+  font-size: 15px;
+  color: silver;
+  padding-top: 0px;
+}
+
+.copyright {
+  padding-top: 35px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.buttons {
+  height: 40px;
+  padding: 0px;
+  width: 100%;      
+}
+
+.yes {
+  color: white;
+}
+
+.no {
+  color: red;
+}   
