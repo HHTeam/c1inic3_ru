@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dizgraphy Games</title>
+  <style>
+  body {
+  background: url('B/page_1.png');
+}
+  </style>
+  
+      <link rel="stylesheet" href="A/stls.css">
+
+  
+</head>
+
+<body>
+	<header>
+  
+</header>
+<main>
+  
+</main>
+<footer>
+ <div class="name"> {Person} </div> 
+ <div class="dialogue"> Что-то пошло не так...</br>Пожалуйста, проверьте подключение к Интернету или повторите попытку позже
+<div class="panel"> <a href="../start.html">Назад</a> <a href="">Вперёд</a> <a href="D/index.html">Загрузить...</a> <a href="C/1.html">Сохранить</a> <a href="">История</a></div>
+</footer>
+</body>	
