@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Клиника №13 > Схема рутов</title>
+  <style>
+    body {font-family: Roboto; }
+    * { padding: 0; margin: 0;}
+
+    .nav {
+      width: auto;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    .nav button {
+      background-color: inherit;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 14pt;
+      border: none;
+      margin: 5px;
+    }
+
+    .tabcontent {
+      display: none;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 95%;
+      position: fixed;
+      margin-bottom: 0;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html"><img src="back.png" title="Вернуться на главную" size="17px" width="17px"></img></a>
+  	<a href="roots.html"><img src="reload.png" title="Перезагрузить страницу" size="17px" width="17px"></img></a>
+    <button class="tablinks" title="Полная расписанная версия рутов." onclick="openTab(event, 'Full')">Открыть всё</button>
+    <button class="tablinks" title="Скрытая краткая версия рутов." onclick="openTab(event, 'Hide')">Свернуть всё</button></div>
+  <div id="Full" class="tabcontent">
+    <iframe src="fullsvg.svg"></iframe>
+  </div>
+  <div id="Hide" class="tabcontent">
+  	<iframe src="hidesvg.svg"></iframe>
+  </div>
+  Выберите, в каком виде открыть схему рутов. <br>
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+</html> 
